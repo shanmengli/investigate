@@ -3,9 +3,9 @@
      <div class="main">
               <h3>{{$store.state.list[4].name}}</h3>
                <img src="../assets/five_03.png" alt="" class="pei">
-               <ul>
-                  <li v-for="(x,index) in $store.state.list[4].list" v-text="x" v-bind:class='{cbg:index==ind}' @click="btn(index)" ></li>
-               </ul>
+               <dl>
+                  <dd v-for="(x,index) in $store.state.list[4].list" v-text="x" v-bind:class='{cbg:index==ind}' @click="btn(index)" ></dd>
+               </dl>
            </div>
             
              <div class="botm">
@@ -61,11 +61,11 @@
         margin:30px auto;
       }
 
-      .main ul{
+      .main dl{
         display: flex;
       }
 
-      .main ul li{
+      .main dl dd{
       margin:0 5px 0 0;
         flex:1;
         text-align: center;
